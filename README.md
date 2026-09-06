@@ -10,19 +10,6 @@ This assignment applies LPC analysis to a one-second audio waveform and investig
 
 For each predictor order, LPC coefficients are calculated, the prediction error is obtained, the signal is reconstructed, and the MSE is evaluated. The experiment also includes individual plots and comparative plots for analyzing the different cases.
 
-## Objectives
-
-The main objectives of this experiment are:
-
-1. Load and visualize the input audio signal.
-2. Compute LPC coefficients for different predictor orders.
-3. Calculate the prediction error signal.
-4. Reconstruct the signal using the prediction error.
-5. Calculate the Mean Squared Error (MSE).
-6. Compare reconstruction quality for different predictor orders.
-7. Analyze the effect of predictor order on prediction accuracy.
-8. Visualize individual and comparative results.
-
 ## Methodology
 
 The experiment follows the workflow below:
@@ -194,7 +181,6 @@ The MSE decreases as the predictor order increases from N = 5 to N = 20. Among t
 
 ## Results and Plots
 
-All plots generated during the experiment can be stored in the `results/` directory.
 
 ### Original Audio Waveform
 
@@ -282,64 +268,6 @@ The following observations are obtained from the experiment:
 
 The results show a reduction in MSE as the predictor order increases.
 
-## Implementation
-
-The main Python script performs the complete LPC analysis.
-
-```text
-Audio Loading
-      |
-      v
-Original Signal Visualization
-      |
-      v
-Autocorrelation Calculation
-      |
-      v
-LPC Coefficient Estimation
-      |
-      v
-Prediction Error Calculation
-      |
-      v
-Signal Reconstruction
-      |
-      v
-MSE Calculation
-      |
-      v
-Individual Plots
-      |
-      v
-Comparison Plots
-      |
-      v
-Results Summary
-```
-
-The implementation stores the following results separately for each predictor order:
-
-- LPC coefficients
-- Prediction error
-- Reconstructed signal
-- MSE
-
-This allows the results from different cases to be compared directly.
-
-The program will:
-
-1. Load the audio signal.
-2. Plot the original waveform.
-3. Process N = 5.
-4. Process N = 10.
-5. Process N = 20.
-6. Calculate the LPC coefficients.
-7. Calculate the prediction error.
-8. Calculate the MSE.
-9. Generate reconstruction plots.
-10. Generate prediction-error plots.
-11. Generate comparison plots.
-12. Display a summary of the LPC coefficients and MSE values.
 
 ## Discussion
 
